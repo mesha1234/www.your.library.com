@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Library</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+
+    <div class="logo">
+        📚 Your Library
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    
+    </ul>
+
+</nav>
+
+<section class="hero">
+    <div class="search-box">
+    <input type="text" id="searchInput" placeholder="Search books...">
+</div>
+
+    <h1>Browse Resources</h1>
+
+    <p>
+        Discover Knowledge Without Limits
+    </p>
+
+</section>
+
+<section class="categories">
+
+    <h2>Featured Resources</h2>
+
+   <div class="cards" id="booksList"></div>
+
+        <div class="card">
+            <h3>📘 Class 10 Science Notes</h3>
+            <p>Chapter-wise revision notes.</p>
+        </div>
+
+        <div class="card">
+            <h3>📝 CBSE Sample Paper</h3>
+            <p>Latest practice paper.</p>
+        </div>
+
+        <div class="card">
+            <h3>📚 Mathematics Handbook</h3>
+            <p>Important formulas and tricks.</p>
+        </div>
+
+        <div class="card">
+            <h3>📖 Story Collection</h3>
+            <p>Short stories and literature.</p>
+        </div>
+
+        <div class="card">
+            <h3>⚡ Physics Notes</h3>
+            <p>Numericals and concepts.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌍 Geography Notes</h3>
+            <p>Maps and quick revision.</p>
+        </div>
+
+    </div>
+
+</section>
+
+<script type="module" src="../js/browse.js"></script>
+<div id="toast" class="toast"></div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Your Library</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    
+<nav class="navbar">
+
+    <div class="logo">
+        📚 Your Library
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    
+    </ul>
+
+</nav>
+
+<section class="hero">
+
+    <h1>Welcome Back</h1>
+
+    <p>
+        Login to upload resources, save favorites and contribute to the community.
+    </p>
+
+</section>
+
+<section class="upload-container">
+
+    <form class="upload-form" id="loginForm">
+
+    <input
+        type="email"
+        id="email"
+        placeholder="Email Address"
+        required>
+
+    <input
+        type="password"
+        id="password"
+        placeholder="Password"
+        required>
+
+    <button type="submit">
+        Login
+    </button>
+
+    <p id="message"></p>
+
+    <p style="text-align:center;">
+        New here?
+        <a href="signup.html" style="color:#2EE6D6;">
+            Create Account
+        </a>
+    </p>
+
+</form>
+
+</section>
+
+<script type="module" src="../js/login.js"></script>
+
+</body>
+</html>

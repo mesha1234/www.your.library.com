@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">📚 Your Library</div>
+    
+<ul class="nav-links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="browse.html">Browse</a></li>
+        <li><a href="upload.html">Upload</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="admin.html">Admin</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    
+    </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>My Dashboard</h1>
+    <p id="welcomeUser">Welcome back 👋</p>
+</section>
+
+<!-- MAIN DASHBOARD -->
+<div class="dashboard-container">
+
+    <!-- LEFT PANEL -->
+    <div class="left-panel">
+
+        <div class="stats-vertical">
+            <div class="stat-card">
+                <h3 id="uploadCount">0</h3>
+                <p>📚 Uploads</p>
+            </div>
+
+            <div class="stat-card">
+                <h3 id="bookmarkCount">0</h3>
+                <p>❤️ Bookmarks</p>
+            </div>
+        </div>
+
+        <div class="chart-box small-chart">
+            <h3>Overview</h3>
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </div>
+   
+    <!-- RIGHT PANEL -->
+    <div class="right-panel">
+
+        <div class="section-box">
+            <h2>📚 My Uploads</h2>
+            <div id="myBooks" class="cards"></div>
+        </div>
+
+        <div class="section-box">
+            <h2>❤️ My Bookmarks</h2>
+            <div id="myBookmarks" class="cards"></div>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SCRIPT -->
+<script type="module" src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload</title>
+
+    
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <div id="toast" class="toast">Uploaded Successfully 🎉</div>
+
+    <nav class="navbar">
+
+
+        <div class="logo">
+            📚 Your Library
+        
+        </div>
+     <ul class="nav-links">
+        <li><a href="../index.html" class="active">Home</a></li>
+        <li><a href="browse.html" class="active">Browse</a></li>
+        <li><a href="upload.html" class="active">Upload</a></li>
+        <li><a href="login.html"class="active">Login</a></li>
+        <li><a href="admin.html" class="active">Admin</a></li>
+        <li><a href="dashboard.html">Dashboard</a></li>
+    
+
+    </ul>
+</nav>
+
+     <section class="hero">
+    <h1>Upload Resource</h1>
+    <p>Share knowledge with students around the world</p>
+        </section>
+
+
+<div class="upload-container">
+
+    <div class="upload-form">
+        
+       
+        <input type="text" id="title" placeholder="Resource Title">
+
+        <textarea id="description" placeholder="Description"></textarea>
+
+        <select id="category">
+            <option value="Science">Science</option>
+            <option value="Math">Math</option>
+            <option value="Programming">Programming</option>
+            <option value="Sample Papers">Sample Papers</option>
+            <option value="others">Others</option>
+        </select>
+
+        <input type="file" id="pdfFile">
+
+        <button type="button" id="uploadBtn">
+            Submit for Approval
+        </button>
+
+    </div>
+
+</div>
+<div id="toast" class="toast"></div>
+
+<script type="module" src="../js/upload.js"></script>
+
+</body>
+</html>
